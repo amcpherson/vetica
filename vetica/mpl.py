@@ -1,5 +1,6 @@
 import os
 import matplotlib
+import matplotlib.font_manager
 import shutil
 import pkg_resources
 
