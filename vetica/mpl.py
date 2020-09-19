@@ -1,3 +1,4 @@
+import os
 import matplotlib
 import shutil
 import pkg_resources
