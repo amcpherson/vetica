@@ -4,7 +4,7 @@ import matplotlib.font_manager
 import shutil
 import pkg_resources
 
-fonts_dir = os.path.join(matplotlib.rcParams['datapath'], 'fonts/ttf')
+fonts_dir = os.path.join(matplotlib.get_data_path(), 'fonts/ttf')
 
 helvetica_filename = 'Helvetica_33244fbeea10f093ae87de7a994c3697.ttf'
 helvetica_dest_filename = os.path.join(fonts_dir, helvetica_filename)
