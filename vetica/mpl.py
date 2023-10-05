@@ -12,7 +12,6 @@ helvetica_src_filename = pkg_resources.resource_filename('vetica', 'data/'+helve
 
 if not os.path.exists(helvetica_dest_filename):
     shutil.copyfile(helvetica_src_filename, helvetica_dest_filename)
-    matplotlib.font_manager._rebuild()
 
 prop = matplotlib.font_manager.FontProperties(fname=helvetica_dest_filename)
 
