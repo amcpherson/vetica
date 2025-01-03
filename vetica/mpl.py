@@ -14,6 +14,7 @@ if not os.path.exists(helvetica_dest_filename):
     shutil.copyfile(helvetica_src_filename, helvetica_dest_filename)
 
 prop = matplotlib.font_manager.FontProperties(fname=helvetica_dest_filename)
+matplotlib.font_manager.fontManager.addfont(helvetica_dest_filename)
 
 matplotlib.rcParams['font.family'] = 'sans-serif'
 matplotlib.rcParams['font.sans-serif'] = 'Helvetica'
